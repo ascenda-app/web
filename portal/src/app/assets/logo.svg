@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   Logotipo provisional de Ascenda (fuente vectorial).
-  Sustituye a la insignia original de Peaker. Composición: insignia circular con
-  anillo blanco, "pico" simple de dos trazos (silueta de montaña + onda) y el
-  nombre "Ascenda". Este fichero es el origen de los iconos y del splash:
-  ver scripts/generate-icons.mjs y assets/README.md del repositorio móvil.
-  Pendiente: logotipo definitivo.
+  Composición: insignia circular con anillo blanco, "pico" simple de dos trazos
+  (silueta de montaña + onda) y el nombre "Ascenda". Este fichero es el origen
+  de los iconos y del splash: ver scripts/generate-icons.mjs y assets/README.md
+  del repositorio móvil. Pendiente: logotipo definitivo.
 -->
 <svg xmlns="http://www.w3.org/2000/svg" width="2816" height="1536" viewBox="0 0 2816 1536">
   <defs>
