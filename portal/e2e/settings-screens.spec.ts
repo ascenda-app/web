@@ -251,8 +251,8 @@ test.describe("SC-17 · ajustes de cuenta", () => {
     await expect(page.getByText("Your account has been closed")).toBeVisible();
 
     const names = (await context.cookies()).map((cookie) => cookie.name);
-    expect(names).not.toContain("peaker_at");
-    expect(names).not.toContain("peaker_rt");
+    expect(names).not.toContain("ascenda_at");
+    expect(names).not.toContain("ascenda_rt");
   });
 
   test("tras la baja el panel deja de ser accesible", async ({ page }) => {

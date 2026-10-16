@@ -18,7 +18,7 @@ test.describe("SC-01 · landing", () => {
     await page.goto("/en");
 
     await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
-    await expect(page.getByText("Why Peaker")).toBeVisible();
+    await expect(page.getByText("Why Ascenda")).toBeVisible();
     await expect(page.getByText("Something went wrong")).toHaveCount(0);
   });
 });

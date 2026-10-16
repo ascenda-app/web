@@ -39,7 +39,7 @@ const peakPage = (
 });
 
 beforeEach(() => {
-  process.env.NEXT_PUBLIC_SITE_URL = "https://peaker.app";
+  process.env.NEXT_PUBLIC_SITE_URL = "http://localhost:3000";
 });
 
 afterEach(() => {
@@ -61,7 +61,7 @@ describe("robots", () => {
   });
 
   it("robots_sitemap_pointsToTheSiteUrl", () => {
-    expect(robots().sitemap).toBe("https://peaker.app/sitemap.xml");
+    expect(robots().sitemap).toBe("http://localhost:3000/sitemap.xml");
   });
 });
 
@@ -88,8 +88,8 @@ describe("sitemap", () => {
     );
 
     for (const locale of locales) {
-      expect(urls).toContain(`https://peaker.app/${locale}`);
-      expect(urls).toContain(`https://peaker.app/${locale}/peaks`);
+      expect(urls).toContain(`http://localhost:3000/${locale}`);
+      expect(urls).toContain(`http://localhost:3000/${locale}/peaks`);
     }
   });
 
@@ -101,7 +101,7 @@ describe("sitemap", () => {
     );
 
     for (const locale of locales) {
-      expect(urls).toContain(`https://peaker.app/${locale}/peaks/abc`);
+      expect(urls).toContain(`http://localhost:3000/${locale}/peaks/abc`);
     }
   });
 
@@ -128,7 +128,7 @@ describe("sitemap", () => {
       (entry) => entry.url,
     );
 
-    expect(urls).toContain("https://peaker.app/en/peaks");
+    expect(urls).toContain("http://localhost:3000/en/peaks");
     expect(urls).toHaveLength(locales.length * 6);
   });
 });

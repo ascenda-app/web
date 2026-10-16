@@ -28,8 +28,8 @@ describe("secure flag", () => {
 
     await writeSessionCookies(tokens);
 
-    expect(secureOf("peaker_at")).toBe(false);
-    expect(secureOf("peaker_rt")).toBe(false);
+    expect(secureOf("ascenda_at")).toBe(false);
+    expect(secureOf("ascenda_rt")).toBe(false);
   });
 
   it("writeSessionCookies_explicitlyEnabled_setsSecureEvenOutsideProduction", async () => {
@@ -38,7 +38,7 @@ describe("secure flag", () => {
 
     await writeSessionCookies(tokens);
 
-    expect(secureOf("peaker_at")).toBe(true);
+    expect(secureOf("ascenda_at")).toBe(true);
   });
 
   it("writeSessionCookies_unset_fallsBackToProductionMeaningSecure", async () => {
@@ -47,7 +47,7 @@ describe("secure flag", () => {
 
     await writeSessionCookies(tokens);
 
-    expect(secureOf("peaker_at")).toBe(true);
+    expect(secureOf("ascenda_at")).toBe(true);
   });
 
   it("writeSessionCookies_unsetOutsideProduction_leavesSecureOff", async () => {
@@ -56,7 +56,7 @@ describe("secure flag", () => {
 
     await writeSessionCookies(tokens);
 
-    expect(secureOf("peaker_at")).toBe(false);
+    expect(secureOf("ascenda_at")).toBe(false);
   });
 
   it("clearSessionCookies_repeatsTheSecureFlagItWasWrittenWith", async () => {
@@ -64,8 +64,8 @@ describe("secure flag", () => {
 
     await clearSessionCookies();
 
-    expect(secureOf("peaker_at")).toBe(false);
-    expect(secureOf("peaker_rt")).toBe(false);
+    expect(secureOf("ascenda_at")).toBe(false);
+    expect(secureOf("ascenda_rt")).toBe(false);
   });
 });
 
@@ -74,7 +74,7 @@ describe("readAccessToken", () => {
     store.get.mockReturnValue({ value: "at" });
 
     await expect(readAccessToken()).resolves.toBe("at");
-    expect(store.get).toHaveBeenCalledWith("peaker_at");
+    expect(store.get).toHaveBeenCalledWith("ascenda_at");
   });
 
   it("readAccessToken_cookieAbsent_returnsUndefined", async () => {
@@ -89,7 +89,7 @@ describe("readRefreshToken", () => {
     store.get.mockReturnValue({ value: "rt" });
 
     await expect(readRefreshToken()).resolves.toBe("rt");
-    expect(store.get).toHaveBeenCalledWith("peaker_rt");
+    expect(store.get).toHaveBeenCalledWith("ascenda_rt");
   });
 });
 
@@ -98,7 +98,7 @@ describe("writeSessionCookies", () => {
     await writeSessionCookies(tokens);
 
     expect(store.set).toHaveBeenCalledWith(
-      "peaker_at",
+      "ascenda_at",
       "at",
       expect.objectContaining({ httpOnly: true, path: "/", maxAge: 900 }),
     );
@@ -108,7 +108,7 @@ describe("writeSessionCookies", () => {
     await writeSessionCookies(tokens);
 
     expect(store.set).toHaveBeenCalledWith(
-      "peaker_rt",
+      "ascenda_rt",
       "rt",
       expect.objectContaining({
         httpOnly: true,
@@ -122,7 +122,7 @@ describe("writeSessionCookies", () => {
     await writeSessionCookies(tokens);
 
     expect(store.set).toHaveBeenCalledWith(
-      "peaker_at",
+      "ascenda_at",
       "at",
       expect.objectContaining({ path: "/", sameSite: "lax" }),
     );
@@ -131,7 +131,7 @@ describe("writeSessionCookies", () => {
   it("writeSessionCookies_refreshToken_livesForThirtyDays", async () => {
     await writeSessionCookies(tokens);
 
-    const call = store.set.mock.calls.find(([name]) => name === "peaker_rt");
+    const call = store.set.mock.calls.find(([name]) => name === "ascenda_rt");
 
     expect(call?.[2]).toMatchObject({ maxAge: 60 * 60 * 24 * 30 });
   });
@@ -142,12 +142,12 @@ describe("clearSessionCookies", () => {
     await clearSessionCookies();
 
     expect(store.set).toHaveBeenCalledWith(
-      "peaker_at",
+      "ascenda_at",
       "",
       expect.objectContaining({ maxAge: 0, path: "/" }),
     );
     expect(store.set).toHaveBeenCalledWith(
-      "peaker_rt",
+      "ascenda_rt",
       "",
       expect.objectContaining({ maxAge: 0, path: "/" }),
     );
@@ -157,7 +157,7 @@ describe("clearSessionCookies", () => {
     await clearSessionCookies();
 
     expect(store.set).toHaveBeenCalledWith(
-      "peaker_rt",
+      "ascenda_rt",
       "",
       expect.objectContaining({ sameSite: "lax" }),
     );

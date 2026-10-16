@@ -40,10 +40,10 @@ describe("legalEntity", () => {
 
   it("legalEntity_aConfiguredHolder_isUsed", async () => {
     const { legalEntity: reloaded } = await reloadWith({
-      LEGAL_HOLDER: "Peaker SL",
+      LEGAL_HOLDER: "Ascenda SL",
     });
 
-    expect(reloaded.holder).toBe("Peaker SL");
+    expect(reloaded.holder).toBe("Ascenda SL");
   });
 
   it("legalEntity_everyRequiredField_isPresent", () => {
@@ -61,7 +61,7 @@ describe("legalEntity", () => {
       holder: "Rubén",
       taxId: "00000000A",
       address: "Calle de la Montaña 1",
-      email: "hola@peaker.io",
+      email: "hola@example.com",
     };
 
     expect(unresolvedLegalFields(filled)).toEqual([]);
@@ -72,7 +72,7 @@ describe("legalEntity", () => {
       holder: "Rubén",
       taxId: "[PENDIENTE: NIF]",
       address: "Calle de la Montaña 1",
-      email: "hola@peaker.io",
+      email: "hola@example.com",
     };
 
     expect(unresolvedLegalFields(partial)).toEqual(["taxId"]);

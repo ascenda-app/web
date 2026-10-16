@@ -60,7 +60,7 @@ const request = (path: string, options: RequestOptions = {}): NextRequest => {
 };
 
 const expiredSession = (): RequestOptions => ({
-  cookies: { peaker_at: expiredToken(), peaker_rt: "current-rt" },
+  cookies: { ascenda_at: expiredToken(), ascenda_rt: "current-rt" },
 });
 
 const location = (response: NextResponse): URL =>
@@ -158,7 +158,7 @@ describe("guard de rutas privadas", () => {
 
   it("proxy_dashboardWithUsableToken_isLetThrough", async () => {
     await proxy(
-      request("/en/dashboard", { cookies: { peaker_at: usableToken() } }),
+      request("/en/dashboard", { cookies: { ascenda_at: usableToken() } }),
     );
 
     expect(intlHandled).toHaveBeenCalledOnce();
@@ -229,7 +229,7 @@ describe("rotacion de la sesion caducada", () => {
 
   it("proxy_dashboardWithoutRefreshCookie_neverCallsTheGateway", async () => {
     const response = await proxy(
-      request("/en/dashboard", { cookies: { peaker_at: expiredToken() } }),
+      request("/en/dashboard", { cookies: { ascenda_at: expiredToken() } }),
     );
 
     expect(rotateTokens).not.toHaveBeenCalled();

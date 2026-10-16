@@ -5,7 +5,7 @@ import { alternatesFor, languageAlternates, noIndex, siteUrl } from "./seo";
 const original = process.env.NEXT_PUBLIC_SITE_URL;
 
 beforeEach(() => {
-  process.env.NEXT_PUBLIC_SITE_URL = "https://peaker.app";
+  process.env.NEXT_PUBLIC_SITE_URL = "http://localhost:3000";
 });
 
 afterEach(() => {
@@ -14,9 +14,9 @@ afterEach(() => {
 
 describe("siteUrl", () => {
   it("siteUrl_trailingSlash_isStripped", () => {
-    process.env.NEXT_PUBLIC_SITE_URL = "https://peaker.app/";
+    process.env.NEXT_PUBLIC_SITE_URL = "http://localhost:3000/";
 
-    expect(siteUrl()).toBe("https://peaker.app");
+    expect(siteUrl()).toBe("http://localhost:3000");
   });
 
   it("siteUrl_missingVariable_fallsBackToLocalhost", () => {
@@ -38,25 +38,25 @@ describe("languageAlternates", () => {
 
     expect(Object.keys(alternates)).toHaveLength(locales.length + 1);
     for (const locale of locales) {
-      expect(alternates[locale]).toBe(`https://peaker.app/${locale}/peaks`);
+      expect(alternates[locale]).toBe(`http://localhost:3000/${locale}/peaks`);
     }
   });
 
   it("languageAlternates_xDefault_pointsToEnglish", () => {
     expect(languageAlternates("/peaks")["x-default"]).toBe(
-      "https://peaker.app/en/peaks",
+      "http://localhost:3000/en/peaks",
     );
   });
 
   it("languageAlternates_rootPath_doesNotDuplicateTheSlash", () => {
-    expect(languageAlternates("/").en).toBe("https://peaker.app/en");
+    expect(languageAlternates("/").en).toBe("http://localhost:3000/en");
   });
 });
 
 describe("alternatesFor", () => {
   it("alternatesFor_locale_setsTheCanonicalOfThatLocale", () => {
     expect(alternatesFor("ar", "/peaks").canonical).toBe(
-      "https://peaker.app/ar/peaks",
+      "http://localhost:3000/ar/peaks",
     );
   });
 

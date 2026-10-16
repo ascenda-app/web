@@ -56,7 +56,7 @@ describe("GET /api/export", () => {
     const response = await GET(request());
 
     expect(response.headers.get("content-disposition")).toMatch(
-      /^attachment; filename="peaker-export-\d{4}-\d{2}-\d{2}\.json"$/,
+      /^attachment; filename="ascenda-export-\d{4}-\d{2}-\d{2}\.json"$/,
     );
     expect(response.headers.get("cache-control")).toBe("no-store");
   });

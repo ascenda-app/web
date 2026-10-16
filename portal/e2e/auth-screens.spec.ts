@@ -36,8 +36,8 @@ test.describe("SC-07 · registro", () => {
       "If that email address is valid, we have sent you a message",
     );
     const names = (await page.context().cookies()).map((cookie) => cookie.name);
-    expect(names).not.toContain("peaker_at");
-    expect(names).not.toContain("peaker_rt");
+    expect(names).not.toContain("ascenda_at");
+    expect(names).not.toContain("ascenda_rt");
   });
 
   test("un correo ya registrado es indistinguible de uno nuevo", async ({
@@ -73,10 +73,10 @@ test.describe("SC-08 · inicio de sesión", () => {
     await expect(page).toHaveURL(/\/en\/dashboard$/);
 
     const cookies = await page.context().cookies();
-    const access = cookies.find((cookie) => cookie.name === "peaker_at");
+    const access = cookies.find((cookie) => cookie.name === "ascenda_at");
 
     expect(access?.httpOnly).toBe(true);
-    expect(cookies.find((cookie) => cookie.name === "peaker_rt")?.httpOnly).toBe(
+    expect(cookies.find((cookie) => cookie.name === "ascenda_rt")?.httpOnly).toBe(
       true,
     );
   });
@@ -210,7 +210,7 @@ test.describe("SC-22 · solicitar recuperación de contraseña", () => {
     await page.goto("/en/forgot-password");
     await page
       .getByLabel("Email address", { exact: true })
-      .fill("nobody@peaker.io");
+      .fill("nobody@example.com");
     await page.getByRole("button", { name: "Send me the link" }).click();
 
     await expect(page.getByRole("status")).toContainText(
