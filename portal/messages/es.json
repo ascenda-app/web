@@ -1,7 +1,7 @@
 {
   "common": {
     "skipToContent": "Saltar al contenido",
-    "brand": "Peaker",
+    "brand": "Ascenda",
     "locale": {
       "label": "Idioma",
       "en": "English",
@@ -125,7 +125,7 @@
       "nearbyCta": "Ver picos cerca de mí"
     },
     "valueProps": {
-      "heading": "Por qué Peaker",
+      "heading": "Por qué Ascenda",
       "searchTitle": "Un catálogo mundial",
       "searchBody": "Encuentra un pico por cualquiera de sus nombres: Matterhorn y Cervino llevan a la misma montaña.",
       "logTitle": "Tus ascensiones, bien guardadas",
@@ -145,7 +145,7 @@
     },
     "farewell": {
       "title": "Tu cuenta se ha dado de baja",
-      "body": "Gracias por haber usado Peaker. Tu perfil, tus ascensiones y tus fotos se están borrando."
+      "body": "Gracias por haber usado Ascenda. Tu perfil, tus ascensiones y tus fotos se están borrando."
     }
   },
   "peaks": {
@@ -254,7 +254,7 @@
   },
   "profile": {
     "public": {
-      "metaDescription": "Ascensiones públicas de {name} en Peaker.",
+      "metaDescription": "Ascensiones públicas de {name} en Ascenda.",
       "ascentsHeading": "Ascensiones públicas",
       "empty": "Este montañero aún no tiene ascensiones públicas.",
       "ascentsUnavailable": "No hemos podido cargar las ascensiones ahora mismo."
@@ -797,7 +797,7 @@
       },
       "privacy": {
         "heading": "Tus datos",
-        "body": "Descarga todo lo que Peaker guarda sobre ti: tu cuenta, tu perfil, tus colecciones y todas tus ascensiones con sus fotos.",
+        "body": "Descarga todo lo que Ascenda guarda sobre ti: tu cuenta, tu perfil, tus colecciones y todas tus ascensiones con sus fotos.",
         "download": "Descargar mis datos"
       }
     }

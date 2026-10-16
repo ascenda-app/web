@@ -1,6 +1,6 @@
-# Peaker · Portal web
+# Ascenda · Portal web
 
-Portal público de Peaker en Next.js 16 (App Router). Cubre los requisitos RF-WEB-01…09 de
+Portal público de Ascenda en Next.js 16 (App Router). Cubre los requisitos RF-WEB-01…09 de
 `.claude/docs/REQUIREMENTS.md` §10, según el blueprint de `.claude/docs/FRONTEND.md`.
 
 ## Puesta en marcha

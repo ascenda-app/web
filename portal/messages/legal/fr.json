@@ -21,7 +21,7 @@
         {
           "heading": "2. Objet",
           "body": [
-            "Peaker est une plateforme permettant de consulter un catalogue mondial de montagnes et d'enregistrer des ascensions. La consultation est libre ; enregistrer une ascension exige un compte.",
+            "Ascenda est une plateforme permettant de consulter un catalogue mondial de montagnes et d'enregistrer des ascensions. La consultation est libre ; enregistrer une ascension exige un compte.",
             "L'utilisation du site confère la qualité d'utilisateur et implique l'acceptation des présentes mentions et des conditions d'utilisation."
           ]
         },
@@ -29,13 +29,13 @@
           "heading": "3. Propriété intellectuelle",
           "body": [
             "Le code, le design et les éléments graphiques du site appartiennent au titulaire. Les données du catalogue proviennent de Wikidata et sont utilisées selon sa licence. Les photographies des fiches de sommet proviennent de Wikimedia Commons et conservent la licence et l'attribution de leurs auteurs.",
-            "Le contenu téléversé par chaque utilisateur — photographies, notes d'itinéraire et données d'ascension — lui appartient. La licence accordée à Peaker pour l'afficher figure dans les conditions d'utilisation."
+            "Le contenu téléversé par chaque utilisateur — photographies, notes d'itinéraire et données d'ascension — lui appartient. La licence accordée à Ascenda pour l'afficher figure dans les conditions d'utilisation."
           ]
         },
         {
           "heading": "4. Exclusion de responsabilité",
           "body": [
-            "Les informations du catalogue proviennent de sources externes et peuvent contenir des erreurs ou des omissions. Peaker n'en garantit ni l'exactitude ni l'actualité.",
+            "Les informations du catalogue proviennent de sources externes et peuvent contenir des erreurs ou des omissions. Ascenda n'en garantit ni l'exactitude ni l'actualité.",
             "La montagne comporte des risques. Les informations de ce site sont indicatives et ne remplacent ni la préparation, ni la formation, ni votre propre jugement. Le titulaire n'est pas responsable des décisions prises sur cette base.",
             "Le titulaire n'est pas responsable des contenus publiés par les utilisateurs ni des sites tiers liés depuis ce site."
           ]
@@ -95,7 +95,7 @@
         {
           "heading": "6. Mineurs",
           "body": [
-            "Peaker ne s'adresse pas aux moins de 14 ans. En vous inscrivant vous déclarez avoir au moins cet âge, seuil fixé par l'article 7 de la loi organique espagnole 3/2018."
+            "Ascenda ne s'adresse pas aux moins de 14 ans. En vous inscrivant vous déclarez avoir au moins cet âge, seuil fixé par l'article 7 de la loi organique espagnole 3/2018."
           ]
         }
       ]
@@ -106,25 +106,25 @@
         {
           "heading": "1. Ce que nous utilisons et pourquoi",
           "body": [
-            "Peaker n'utilise ni cookies publicitaires, ni cookies de mesure d'audience, ni traceurs. Aucun profilage, aucun tiers qui vous suit d'un site à l'autre.",
+            "Ascenda n'utilise ni cookies publicitaires, ni cookies de mesure d'audience, ni traceurs. Aucun profilage, aucun tiers qui vous suit d'un site à l'autre.",
             "Les cookies utilisés sont strictement nécessaires au fonctionnement du site ou mémorisent une préférence que vous avez choisie ; ils sont donc exemptés du consentement préalable de l'article 22.2 de la LSSI espagnole."
           ]
         },
         {
           "heading": "2. Liste des cookies et stockages",
           "body": [
-            "peaker_at — interne, technique. Maintient votre session ouverte. Expire au bout de 15 minutes.",
-            "peaker_rt — interne, technique. Renouvelle la session sans ressaisir le mot de passe. Expire au bout de 30 jours.",
+            "ascenda_at — interne, technique. Maintient votre session ouverte. Expire au bout de 15 minutes.",
+            "ascenda_rt — interne, technique. Renouvelle la session sans ressaisir le mot de passe. Expire au bout de 30 jours.",
             "NEXT_LOCALE — interne, préférence. Mémorise la langue choisie. Expire au bout d'un an.",
-            "peaker_cc — interne, technique. Mémorise votre décision sur la carte tierce. Expire au bout de 6 mois.",
-            "peaker-preferences — stockage local du navigateur. Mémorise l'affichage de vos ascensions en cartes ou en tableau.",
-            "peaker-email-confirmation — stockage local du navigateur. Mémorise quand vous pouvez redemander le courriel de confirmation."
+            "ascenda_cc — interne, technique. Mémorise votre décision sur la carte tierce. Expire au bout de 6 mois.",
+            "ascenda-preferences — stockage local du navigateur. Mémorise l'affichage de vos ascensions en cartes ou en tableau.",
+            "ascenda-email-confirmation — stockage local du navigateur. Mémorise quand vous pouvez redemander le courriel de confirmation."
           ]
         },
         {
           "heading": "3. La carte tierce",
           "body": [
-            "La carte utilise les tuiles d'{mapProvider}. La charger fait que votre navigateur se connecte à des serveurs extérieurs à Peaker, qui reçoivent votre adresse IP. Ce n'est pas un cookie, mais bien une communication à un tiers : nous demandons donc votre accord.",
+            "La carte utilise les tuiles d'{mapProvider}. La charger fait que votre navigateur se connecte à des serveurs extérieurs à Ascenda, qui reçoivent votre adresse IP. Ce n'est pas un cookie, mais bien une communication à un tiers : nous demandons donc votre accord.",
             "Si vous refusez, le site fonctionne quand même : à la place de la carte apparaît un bouton pour la charger ponctuellement."
           ]
         },
@@ -143,7 +143,7 @@
         {
           "heading": "1. Acceptation",
           "body": [
-            "Ces conditions régissent l'utilisation de Peaker. Créer un compte vaut acceptation expresse. Si vous n'êtes pas d'accord, n'utilisez pas le service.",
+            "Ces conditions régissent l'utilisation de Ascenda. Créer un compte vaut acceptation expresse. Si vous n'êtes pas d'accord, n'utilisez pas le service.",
             "Nous pouvons les modifier ; en cas de changement important nous vous en informerons et vous demanderons de les accepter à nouveau."
           ]
         },
@@ -159,7 +159,7 @@
           "heading": "3. Votre contenu",
           "body": [
             "Vous conservez la propriété de tout ce que vous téléversez : photographies, notes et données d'ascension.",
-            "En le publiant vous nous accordez une licence mondiale, non exclusive, gratuite et révocable, limitée à héberger, reproduire et afficher ce contenu au sein de Peaker selon la visibilité que vous avez choisie. Nous ne l'utiliserons pas à d'autres fins et ne le céderons pas à des fins publicitaires.",
+            "En le publiant vous nous accordez une licence mondiale, non exclusive, gratuite et révocable, limitée à héberger, reproduire et afficher ce contenu au sein de Ascenda selon la visibilité que vous avez choisie. Nous ne l'utiliserons pas à d'autres fins et ne le céderons pas à des fins publicitaires.",
             "Supprimer un contenu ou clôturer votre compte met fin à cette licence.",
             "Vous garantissez avoir le droit de téléverser ce que vous téléversez et que cela ne porte atteinte ni aux droits de tiers ni à la vie privée des personnes représentées."
           ]
@@ -170,7 +170,7 @@
             "Publier un contenu illicite, diffamatoire, incitant à la haine ou portant atteinte aux droits de tiers.",
             "Usurper l'identité d'autrui ou créer des comptes de façon automatisée.",
             "Tenter d'accéder aux comptes d'autrui, sonder la sécurité du service ou le dégrader par des requêtes massives.",
-            "Extraire le contenu de façon systématique pour le réutiliser hors de Peaker."
+            "Extraire le contenu de façon systématique pour le réutiliser hors de Ascenda."
           ]
         },
         {
@@ -182,7 +182,7 @@
         {
           "heading": "6. Disponibilité et responsabilité",
           "body": [
-            "Peaker est fourni « en l'état ». Nous nous efforçons de le maintenir disponible et exact, sans garantir l'absence d'interruptions ou d'erreurs.",
+            "Ascenda est fourni « en l'état ». Nous nous efforçons de le maintenir disponible et exact, sans garantir l'absence d'interruptions ou d'erreurs.",
             "Les informations sur les montagnes sont indicatives et ne remplacent ni la préparation ni votre propre jugement en montagne."
           ]
         },

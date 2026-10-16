@@ -21,7 +21,7 @@
         {
           "heading": "2. Purpose",
           "body": [
-            "Peaker is a platform for browsing a worldwide catalogue of mountains and logging ascents. Browsing the catalogue is open to anyone; logging ascents requires an account.",
+            "Ascenda is a platform for browsing a worldwide catalogue of mountains and logging ascents. Browsing the catalogue is open to anyone; logging ascents requires an account.",
             "Using the site makes you a user and implies acceptance of this legal notice and of the terms of use."
           ]
         },
@@ -29,13 +29,13 @@
           "heading": "3. Intellectual property",
           "body": [
             "The code, design and graphic elements of the site belong to the holder. Mountain catalogue data comes from Wikidata and is used under its licence. Peak photographs come from Wikimedia Commons and keep their authors' licence and attribution.",
-            "Content uploaded by each user — photographs, route notes and ascent data — remains theirs. The licence granted to Peaker to display it is set out in the terms of use."
+            "Content uploaded by each user — photographs, route notes and ascent data — remains theirs. The licence granted to Ascenda to display it is set out in the terms of use."
           ]
         },
         {
           "heading": "4. Disclaimer",
           "body": [
-            "Catalogue information comes from external sources and may contain errors or omissions. Peaker does not guarantee its accuracy or currency.",
+            "Catalogue information comes from external sources and may contain errors or omissions. Ascenda does not guarantee its accuracy or currency.",
             "Mountains are dangerous. The information on this site is indicative and is no substitute for preparation, training or your own judgement. The holder is not liable for decisions made on the basis of it.",
             "The holder is not responsible for content published by users nor for third-party sites linked from here."
           ]
@@ -95,7 +95,7 @@
         {
           "heading": "6. Minors",
           "body": [
-            "Peaker is not aimed at anyone under 14. By signing up you declare that you are at least that age, the threshold set by article 7 of Spanish Organic Law 3/2018."
+            "Ascenda is not aimed at anyone under 14. By signing up you declare that you are at least that age, the threshold set by article 7 of Spanish Organic Law 3/2018."
           ]
         }
       ]
@@ -106,25 +106,25 @@
         {
           "heading": "1. What we use and why",
           "body": [
-            "Peaker uses no advertising, analytics or tracking cookies. There is no profiling and no third party following you across sites.",
+            "Ascenda uses no advertising, analytics or tracking cookies. There is no profiling and no third party following you across sites.",
             "The cookies we do use are strictly necessary for the site to work, or store a preference you chose yourself, so they are exempt from the prior consent duty of article 22.2 of the Spanish LSSI."
           ]
         },
         {
           "heading": "2. Cookies and storage in use",
           "body": [
-            "peaker_at — first party, technical. Keeps you signed in. Expires after 15 minutes.",
-            "peaker_rt — first party, technical. Renews your session without retyping your password. Expires after 30 days.",
+            "ascenda_at — first party, technical. Keeps you signed in. Expires after 15 minutes.",
+            "ascenda_rt — first party, technical. Renews your session without retyping your password. Expires after 30 days.",
             "NEXT_LOCALE — first party, preference. Remembers the language you chose. Expires after a year.",
-            "peaker_cc — first party, technical. Remembers your decision about the third-party map. Expires after 6 months.",
-            "peaker-preferences — browser local storage. Remembers whether you prefer your ascents as cards or as a table.",
-            "peaker-email-confirmation — browser local storage. Remembers when you may request the confirmation email again."
+            "ascenda_cc — first party, technical. Remembers your decision about the third-party map. Expires after 6 months.",
+            "ascenda-preferences — browser local storage. Remembers whether you prefer your ascents as cards or as a table.",
+            "ascenda-email-confirmation — browser local storage. Remembers when you may request the confirmation email again."
           ]
         },
         {
           "heading": "3. The third-party map",
           "body": [
-            "The map uses {mapProvider} tiles. Loading it makes your browser connect to servers outside Peaker, which receive your IP address. That is not a cookie, but it is a disclosure to a third party, so we ask first.",
+            "The map uses {mapProvider} tiles. Loading it makes your browser connect to servers outside Ascenda, which receive your IP address. That is not a cookie, but it is a disclosure to a third party, so we ask first.",
             "If you decline, the site still works: where the map would go you get a button to load it just that once."
           ]
         },
@@ -143,7 +143,7 @@
         {
           "heading": "1. Acceptance",
           "body": [
-            "These terms govern the use of Peaker. Creating an account is an express acceptance of them. If you disagree, do not use the service.",
+            "These terms govern the use of Ascenda. Creating an account is an express acceptance of them. If you disagree, do not use the service.",
             "We may amend them; if a change is significant we will tell you and ask you to accept them again."
           ]
         },
@@ -159,7 +159,7 @@
           "heading": "3. Your content",
           "body": [
             "You keep ownership of everything you upload: photographs, notes and ascent data.",
-            "By publishing it you grant us a worldwide, non-exclusive, royalty-free and revocable licence, limited to hosting, reproducing and displaying that content within Peaker with the visibility you chose. We will not use it for anything else nor share it for advertising.",
+            "By publishing it you grant us a worldwide, non-exclusive, royalty-free and revocable licence, limited to hosting, reproducing and displaying that content within Ascenda with the visibility you chose. We will not use it for anything else nor share it for advertising.",
             "Deleting a piece of content, or closing your account, ends that licence.",
             "You warrant that you have the right to upload what you upload and that it infringes neither third-party rights nor the privacy of anyone shown."
           ]
@@ -170,7 +170,7 @@
             "Publishing unlawful or defamatory content, content inciting hatred, or content infringing third-party rights.",
             "Impersonating someone else or creating accounts automatically.",
             "Attempting to access other people's accounts, probing the security of the service or degrading it with mass requests.",
-            "Systematically extracting content to reuse it outside Peaker."
+            "Systematically extracting content to reuse it outside Ascenda."
           ]
         },
         {
@@ -182,7 +182,7 @@
         {
           "heading": "6. Availability and liability",
           "body": [
-            "Peaker is provided «as is». We aim to keep it available and its data correct, but we do not guarantee that there will be no interruptions or errors.",
+            "Ascenda is provided «as is». We aim to keep it available and its data correct, but we do not guarantee that there will be no interruptions or errors.",
             "Mountain information is indicative and is no substitute for preparation or your own judgement in mountain activities."
           ]
         },

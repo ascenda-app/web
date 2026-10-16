@@ -1,7 +1,7 @@
 {
   "common": {
     "skipToContent": "跳转到主要内容",
-    "brand": "Peaker",
+    "brand": "Ascenda",
     "locale": {
       "label": "语言",
       "en": "English",
@@ -125,7 +125,7 @@
       "nearbyCta": "查看附近的山峰"
     },
     "valueProps": {
-      "heading": "为什么选择 Peaker",
+      "heading": "为什么选择 Ascenda",
       "searchTitle": "覆盖全球的目录",
       "searchBody": "用山峰的任意名称都能找到它：Matterhorn 和 Cervino 指向同一座山。",
       "logTitle": "妥善保存你的登顶记录",
@@ -145,7 +145,7 @@
     },
     "farewell": {
       "title": "你的账户已注销",
-      "body": "感谢你使用 Peaker。你的个人资料、登顶记录和照片正在删除中。"
+      "body": "感谢你使用 Ascenda。你的个人资料、登顶记录和照片正在删除中。"
     }
   },
   "peaks": {
@@ -254,7 +254,7 @@
   },
   "profile": {
     "public": {
-      "metaDescription": "{name} 在 Peaker 上公开的登顶记录。",
+      "metaDescription": "{name} 在 Ascenda 上公开的登顶记录。",
       "ascentsHeading": "公开的登顶记录",
       "empty": "这位登山者还没有公开的登顶记录。",
       "ascentsUnavailable": "暂时无法加载登顶记录。"
@@ -797,7 +797,7 @@
       },
       "privacy": {
         "heading": "你的数据",
-        "body": "下载 Peaker 保存的全部个人数据：账户、个人资料、收藏，以及每一次登顶记录及其照片。",
+        "body": "下载 Ascenda 保存的全部个人数据：账户、个人资料、收藏，以及每一次登顶记录及其照片。",
         "download": "下载我的数据"
       }
     }
