@@ -122,7 +122,7 @@ describe("reenvío al gateway", () => {
 
     await GET(
       request("http://localhost:3000/api/bff/peaks", {
-        headers: { cookie: "peaker_at=secret" },
+        headers: { cookie: "ascenda_at=secret" },
       }),
       context("peaks"),
     );

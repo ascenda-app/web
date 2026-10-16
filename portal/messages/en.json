@@ -1,7 +1,7 @@
 {
   "common": {
     "skipToContent": "Skip to content",
-    "brand": "Peaker",
+    "brand": "Ascenda",
     "locale": {
       "label": "Language",
       "en": "English",
@@ -125,7 +125,7 @@
       "nearbyCta": "See peaks near me"
     },
     "valueProps": {
-      "heading": "Why Peaker",
+      "heading": "Why Ascenda",
       "searchTitle": "A worldwide catalogue",
       "searchBody": "Find a peak by any of its names: Matterhorn and Cervino lead to the same mountain.",
       "logTitle": "Your ascents, kept properly",
@@ -145,7 +145,7 @@
     },
     "farewell": {
       "title": "Your account has been closed",
-      "body": "Thanks for using Peaker. Your profile, ascents and photos are being deleted."
+      "body": "Thanks for using Ascenda. Your profile, ascents and photos are being deleted."
     }
   },
   "peaks": {
@@ -254,7 +254,7 @@
   },
   "profile": {
     "public": {
-      "metaDescription": "{name}'s public ascents on Peaker.",
+      "metaDescription": "{name}'s public ascents on Ascenda.",
       "ascentsHeading": "Public ascents",
       "empty": "This climber has no public ascents yet.",
       "ascentsUnavailable": "We couldn't load the ascents right now."
@@ -797,7 +797,7 @@
       },
       "privacy": {
         "heading": "Your data",
-        "body": "Download everything Peaker holds about you: your account, your profile, your collections and every ascent with its photos.",
+        "body": "Download everything Ascenda holds about you: your account, your profile, your collections and every ascent with its photos.",
         "download": "Download my data"
       }
     }

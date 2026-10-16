@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 import sharp from "sharp";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
-const mobileRoot = join(root, "..", "..", "peaker-mobile", "app");
+const mobileRoot = join(root, "..", "..", "mobile", "app");
 const source = join(root, "src", "app", "assets", "logo.png");
 
 const transparent = { r: 0, g: 0, b: 0, alpha: 0 };
@@ -139,12 +139,12 @@ const writeLauncherIcons = async (badge, density, scale) => {
 
 const writeMobileIcons = async (badge) => {
   if (!existsSync(mobileRoot)) {
-    console.log(`peaker-mobile no disponible en ${mobileRoot}; omitido.`);
+    console.log(`mobile no disponible en ${mobileRoot}; omitido.`);
 
     return;
   }
 
-  console.log("peaker-mobile:");
+  console.log("mobile:");
 
   for (const [density, scale] of densities) {
     await writeLauncherIcons(badge, density, scale);

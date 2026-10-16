@@ -13,7 +13,7 @@ interface PersonalDataExport {
 }
 
 const fileName = (): string =>
-  `peaker-export-${new Date().toISOString().slice(0, 10)}.json`;
+  `ascenda-export-${new Date().toISOString().slice(0, 10)}.json`;
 
 const collectProfile = async (): Promise<unknown> => {
   try {

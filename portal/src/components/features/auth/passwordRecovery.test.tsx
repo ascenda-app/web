@@ -45,13 +45,13 @@ describe("ForgotPasswordForm", () => {
     const user = userEvent.setup();
     render(<ForgotPasswordForm />, { wrapper: IntlWrapper });
 
-    await user.type(screen.getByLabelText("Email address"), "hiker@peaker.io");
+    await user.type(screen.getByLabelText("Email address"), "hiker@example.com");
     await user.click(screen.getByRole("button", { name: "Send me the link" }));
 
     await waitFor(() =>
       expect(apiFetch).toHaveBeenCalledWith("auth/password/forgot", {
         method: "POST",
-        body: JSON.stringify({ email: "hiker@peaker.io" }),
+        body: JSON.stringify({ email: "hiker@example.com" }),
       }),
     );
   });
@@ -61,7 +61,7 @@ describe("ForgotPasswordForm", () => {
     const user = userEvent.setup();
     render(<ForgotPasswordForm />, { wrapper: IntlWrapper });
 
-    await user.type(screen.getByLabelText("Email address"), "hiker@peaker.io");
+    await user.type(screen.getByLabelText("Email address"), "hiker@example.com");
     await user.click(screen.getByRole("button", { name: "Send me the link" }));
 
     const confirmation = await screen.findByRole("status");
@@ -77,7 +77,7 @@ describe("ForgotPasswordForm", () => {
       ),
     });
 
-    await user.type(screen.getByLabelText("Correo electrónico"), "hiker@peaker");
+    await user.type(screen.getByLabelText("Correo electrónico"), "hiker@example");
     await user.click(screen.getByRole("button", { name: "Enviarme el enlace" }));
 
     expect(
@@ -93,7 +93,7 @@ describe("ForgotPasswordForm", () => {
     const user = userEvent.setup();
     render(<ForgotPasswordForm />, { wrapper: IntlWrapper });
 
-    await user.type(screen.getByLabelText("Email address"), "hiker@peaker.io");
+    await user.type(screen.getByLabelText("Email address"), "hiker@example.com");
     await user.click(screen.getByRole("button", { name: "Send me the link" }));
 
     expect(await screen.findByRole("alert")).toHaveTextContent(

@@ -1,7 +1,7 @@
 {
   "common": {
     "skipToContent": "Aller au contenu",
-    "brand": "Peaker",
+    "brand": "Ascenda",
     "locale": {
       "label": "Langue",
       "en": "English",
@@ -125,7 +125,7 @@
       "nearbyCta": "Voir les sommets près de moi"
     },
     "valueProps": {
-      "heading": "Pourquoi Peaker",
+      "heading": "Pourquoi Ascenda",
       "searchTitle": "Un catalogue mondial",
       "searchBody": "Trouvez un sommet par n'importe lequel de ses noms : Matterhorn et Cervin mènent à la même montagne.",
       "logTitle": "Vos ascensions, bien conservées",
@@ -145,7 +145,7 @@
     },
     "farewell": {
       "title": "Votre compte a été clôturé",
-      "body": "Merci d'avoir utilisé Peaker. Votre profil, vos ascensions et vos photos sont en cours de suppression."
+      "body": "Merci d'avoir utilisé Ascenda. Votre profil, vos ascensions et vos photos sont en cours de suppression."
     }
   },
   "peaks": {
@@ -254,7 +254,7 @@
   },
   "profile": {
     "public": {
-      "metaDescription": "Ascensions publiques de {name} sur Peaker.",
+      "metaDescription": "Ascensions publiques de {name} sur Ascenda.",
       "ascentsHeading": "Ascensions publiques",
       "empty": "Ce grimpeur n'a pas encore d'ascension publique.",
       "ascentsUnavailable": "Nous n'avons pas pu charger les ascensions pour le moment."
@@ -797,7 +797,7 @@
       },
       "privacy": {
         "heading": "Vos données",
-        "body": "Téléchargez tout ce que Peaker conserve sur vous : votre compte, votre profil, vos collections et toutes vos ascensions avec leurs photos.",
+        "body": "Téléchargez tout ce que Ascenda conserve sur vous : votre compte, votre profil, vos collections et toutes vos ascensions avec leurs photos.",
         "download": "Télécharger mes données"
       }
     }

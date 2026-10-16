@@ -1,4 +1,4 @@
-export const consentCookieName = "peaker_cc";
+export const consentCookieName = "ascenda_cc";
 
 const maxAgeSeconds = 60 * 60 * 24 * 182;
 

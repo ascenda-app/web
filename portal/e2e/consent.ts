@@ -6,7 +6,7 @@ export const acceptCookies = async (
 ): Promise<void> => {
   await context.addCookies([
     {
-      name: "peaker_cc",
+      name: "ascenda_cc",
       value: encodeURIComponent(
         JSON.stringify({ maps, decidedAtUtc: new Date().toISOString() }),
       ),

@@ -16,6 +16,6 @@ export const usePreferences = create<PreferencesState>()(
       ascentListView: "cards",
       setAscentListView: (ascentListView) => set({ ascentListView }),
     }),
-    { name: "peaker-preferences" },
+    { name: "ascenda-preferences" },
   ),
 );

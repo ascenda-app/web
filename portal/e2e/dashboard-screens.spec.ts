@@ -203,7 +203,7 @@ test.describe("SC-11 · renovacion de la sesion", () => {
 
     await context.addCookies([
       {
-        name: "peaker_at",
+        name: "ascenda_at",
         value: `header.${payload}.signature`,
         domain: "localhost",
         path: "/",
@@ -214,7 +214,7 @@ test.describe("SC-11 · renovacion de la sesion", () => {
 
   test("la cookie de refresco viaja por todo el sitio", async ({ context }) => {
     const refresh = (await context.cookies()).find(
-      (cookie) => cookie.name === "peaker_rt",
+      (cookie) => cookie.name === "ascenda_rt",
     );
 
     expect(refresh?.path).toBe("/");
@@ -234,7 +234,7 @@ test.describe("SC-11 · renovacion de la sesion", () => {
       page.getByRole("heading", { level: 1, name: `Hello, ${fixtures.climberName}` }),
     ).toBeVisible();
     expect(
-      (await context.cookies()).find((cookie) => cookie.name === "peaker_rt")
+      (await context.cookies()).find((cookie) => cookie.name === "ascenda_rt")
         ?.value,
     ).toBe("rotated-refresh-token");
   });
@@ -244,7 +244,7 @@ test.describe("SC-11 · renovacion de la sesion", () => {
     context,
   }) => {
     await expireAccessToken(context);
-    await context.clearCookies({ name: "peaker_rt" });
+    await context.clearCookies({ name: "ascenda_rt" });
 
     await page.goto("/en/dashboard");
 

@@ -1,2 +1,2 @@
-export const accessTokenCookieName = "peaker_at";
-export const refreshTokenCookieName = "peaker_rt";
+export const accessTokenCookieName = "ascenda_at";
+export const refreshTokenCookieName = "ascenda_rt";
