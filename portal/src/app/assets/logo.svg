@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Logotipo provisional de Ascenda (fuente vectorial).
+  Sustituye a la insignia original de Peaker. Composición: insignia circular con
+  anillo blanco, "pico" simple de dos trazos (silueta de montaña + onda) y el
+  nombre "Ascenda". Este fichero es el origen de los iconos y del splash:
+  ver scripts/generate-icons.mjs y assets/README.md del repositorio móvil.
+  Pendiente: logotipo definitivo.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="2816" height="1536" viewBox="0 0 2816 1536">
+  <defs>
+    <g id="pico">
+      <path d="M -300 140 L -80 -180 L 30 40 L 150 -200 L 350 140 Z"
+            fill="none" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M -230 60 C -150 10 -60 40 20 10 C 110 -25 200 30 290 70"
+            fill="none" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </defs>
+
+  <g transform="translate(1408 768)">
+    <circle r="733" fill="#005C41"/>
+    <circle r="733" fill="none" stroke="#FFFFFF" stroke-width="34"/>
+    <g transform="translate(0 -110)" stroke="#FFFFFF">
+      <use href="#pico"/>
+    </g>
+    <text x="0" y="392" text-anchor="middle" fill="#FFFFFF"
+          font-family="Carlito, DejaVu Sans, Verdana, sans-serif" font-weight="500"
+          font-size="250" letter-spacing="26">Ascenda</text>
+  </g>
+</svg>
