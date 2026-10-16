@@ -16,6 +16,6 @@ export const useEmailConfirmation = create<EmailConfirmationState>()(
       markUnconfirmed: () => set({ unconfirmed: true }),
       clear: () => set({ unconfirmed: false }),
     }),
-    { name: "peaker-email-confirmation" },
+    { name: "ascenda-email-confirmation" },
   ),
 );

@@ -2,21 +2,21 @@ import { Noto_Sans, Noto_Sans_Arabic, Noto_Sans_SC } from "next/font/google";
 import type { Locale } from "@/i18n/config";
 
 const latin = Noto_Sans({
-  variable: "--font-peaker-sans",
+  variable: "--font-ascenda-sans",
   subsets: ["latin"],
   display: "swap",
   preload: true,
 });
 
 const arabic = Noto_Sans_Arabic({
-  variable: "--font-peaker-sans",
+  variable: "--font-ascenda-sans",
   subsets: ["arabic"],
   display: "swap",
   preload: true,
 });
 
 const simplifiedChinese = Noto_Sans_SC({
-  variable: "--font-peaker-sans",
+  variable: "--font-ascenda-sans",
   subsets: ["latin"],
   display: "swap",
   preload: false,

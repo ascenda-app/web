@@ -67,7 +67,7 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  --font-sans: var(--font-peaker-sans);
+  --font-sans: var(--font-ascenda-sans);
   --radius-md: var(--radius);
 }
 
@@ -79,7 +79,7 @@
   body {
     background-color: var(--background);
     color: var(--foreground);
-    font-family: var(--font-peaker-sans), system-ui, sans-serif;
+    font-family: var(--font-ascenda-sans), system-ui, sans-serif;
   }
 
   :focus-visible {
