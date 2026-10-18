@@ -17,14 +17,17 @@ const { RegisterForm } = await import("./RegisterForm");
 const termsRequired =
   "You must confirm that you are at least 14 years old and accept the Terms of use and the Privacy policy.";
 
-const respondWith = (status: number, body: unknown = {}) =>
+const respondWith = (status: number, body?: unknown) =>
   vi.stubGlobal(
     "fetch",
-    vi.fn().mockResolvedValue({
-      ok: status < 400,
-      status,
-      json: async () => body,
-    }),
+    vi.fn().mockResolvedValue(
+      body === undefined
+        ? new Response(null, { status })
+        : new Response(JSON.stringify(body), {
+            status,
+            headers: { "Content-Type": "application/json" },
+          }),
+    ),
   );
 
 const fillAndSubmit = async (overrides: Partial<Record<string, string>> = {}) => {
@@ -51,7 +54,7 @@ afterEach(() => {
 
 describe("RegisterForm", () => {
   it("registerForm_success_normalisesTheEmailAndTrimsTheUsername", async () => {
-    const fetchMock = vi.fn().mockResolvedValue({ ok: true, status: 202, json: async () => ({}) });
+    const fetchMock = vi.fn().mockResolvedValue(new Response(null, { status: 202 }));
     vi.stubGlobal("fetch", fetchMock);
     render(<RegisterForm />, { wrapper: IntlWrapper });
 

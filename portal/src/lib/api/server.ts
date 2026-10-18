@@ -1,6 +1,6 @@
 import "server-only";
 import { readAccessToken } from "@/lib/auth/cookies";
-import { ApiError, readProblem } from "./client";
+import { ApiError, readProblem, readSuccessBody } from "./client";
 import { gatewayUrl } from "./gateway";
 
 export interface ServerFetchOptions {
@@ -41,7 +41,5 @@ export const serverFetch = async <T>(
     throw new ApiError(await readProblem(response));
   }
 
-  return response.status === 204
-    ? (undefined as T)
-    : ((await response.json()) as T);
+  return readSuccessBody<T>(response);
 };

@@ -22,11 +22,28 @@ const jsonHeaders = (init?: RequestInit): HeadersInit => ({
   ...init?.headers,
 });
 
-const readJson = async <T>(response: Response): Promise<T> => {
-  try {
-    return (await response.json()) as T;
-  } catch {
+export const readSuccessBody = async <T>(response: Response): Promise<T> => {
+  if (response.status === 204 || response.status === 205) {
     return undefined as T;
+  }
+
+  const body = await response.text();
+
+  // Un 2xx sin cuerpo es una respuesta de éxito válida (202 Accepted, por
+  // ejemplo): el contrato no incluye representación. Un cuerpo no vacío que no
+  // sea JSON sí es inesperado y no debe silenciarse.
+  if (body.trim() === "") {
+    return undefined as T;
+  }
+
+  try {
+    return JSON.parse(body) as T;
+  } catch {
+    throw new ApiError({
+      status: response.status,
+      title: "Respuesta inesperada del servidor",
+      detail: `Se esperaba un cuerpo JSON y se recibió: ${body.slice(0, 80)}`,
+    });
   }
 };
 
@@ -43,7 +60,7 @@ export const apiFetch = async <T>(
     throw new ApiError(await readProblem(response));
   }
 
-  return readJson<T>(response);
+  return readSuccessBody<T>(response);
 };
 
 export const apiUpload = async <T>(
@@ -61,7 +78,7 @@ export const apiUpload = async <T>(
     throw new ApiError(await readProblem(response));
   }
 
-  return readJson<T>(response);
+  return readSuccessBody<T>(response);
 };
 
 export const buildQuery = (

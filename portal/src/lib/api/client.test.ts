@@ -2,11 +2,10 @@ import { afterEach, describe, expect, it, vi } from "vitest";
 import { ApiError, apiFetch, apiUpload, buildQuery, readProblem } from "./client";
 
 const jsonResponse = (body: unknown, status = 200): Response =>
-  ({
-    ok: status >= 200 && status < 300,
+  new Response(JSON.stringify(body), {
     status,
-    json: async () => body,
-  }) as Response;
+    headers: { "Content-Type": "application/json" },
+  });
 
 afterEach(() => {
   vi.restoreAllMocks();
@@ -79,6 +78,27 @@ describe("apiFetch", () => {
     );
 
     await expect(apiFetch("ascents/a1")).resolves.toBeUndefined();
+  });
+
+  it("apiFetch_acceptedWithNoBody_resolvesUndefined", async () => {
+    vi.stubGlobal(
+      "fetch",
+      vi.fn().mockResolvedValue(new Response(null, { status: 202 })),
+    );
+
+    await expect(apiFetch("auth/register", { method: "POST" })).resolves.toBeUndefined();
+  });
+
+  it("apiFetch_okWithANonJsonBody_throwsApiErrorInsteadOfHidingIt", async () => {
+    vi.stubGlobal(
+      "fetch",
+      vi.fn().mockResolvedValue(new Response("<html>proxy</html>", { status: 200 })),
+    );
+
+    await expect(apiFetch("peaks")).rejects.toMatchObject({
+      name: "ApiError",
+      problem: { status: 200, title: "Respuesta inesperada del servidor" },
+    });
   });
 
   it("apiFetch_errorResponse_throwsApiErrorCarryingTheProblem", async () => {
