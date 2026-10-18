@@ -58,7 +58,12 @@ const respondWith = (body: unknown, status = 200) =>
     "fetch",
     vi
       .fn()
-      .mockResolvedValue({ ok: status < 400, status, json: async () => body }),
+      .mockResolvedValue(
+        new Response(JSON.stringify(body), {
+          status,
+          headers: { "Content-Type": "application/json" },
+        }),
+      ),
   );
 
 const setOrigin = async () => {

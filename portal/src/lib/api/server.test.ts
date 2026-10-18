@@ -14,7 +14,10 @@ vi.mock("./gateway", () => ({
 const { serverFetch } = await import("./server");
 
 const ok = (body: unknown): Response =>
-  ({ ok: true, status: 200, json: async () => body }) as Response;
+  new Response(JSON.stringify(body), {
+    status: 200,
+    headers: { "Content-Type": "application/json" },
+  });
 
 const lastInit = (mock: ReturnType<typeof vi.fn>): RequestInit =>
   (mock.mock.calls[0] as [string, RequestInit])[1];
@@ -101,5 +104,25 @@ describe("serverFetch", () => {
     );
 
     await expect(serverFetch("ascents/a1")).resolves.toBeUndefined();
+  });
+
+  it("serverFetch_acceptedWithNoBody_resolvesUndefined", async () => {
+    vi.stubGlobal(
+      "fetch",
+      vi.fn().mockResolvedValue(new Response(null, { status: 202 })),
+    );
+
+    await expect(serverFetch("auth/register")).resolves.toBeUndefined();
+  });
+
+  it("serverFetch_okWithANonJsonBody_throwsApiError", async () => {
+    vi.stubGlobal(
+      "fetch",
+      vi.fn().mockResolvedValue(new Response("<html>proxy</html>", { status: 200 })),
+    );
+
+    await expect(serverFetch("peaks")).rejects.toMatchObject({
+      problem: { status: 200, title: "Respuesta inesperada del servidor" },
+    });
   });
 });

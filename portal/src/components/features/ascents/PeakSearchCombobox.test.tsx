@@ -49,7 +49,12 @@ const respondWith = (items: PeakListItemResponse[]) => {
   };
   vi.stubGlobal(
     "fetch",
-    vi.fn().mockResolvedValue({ ok: true, status: 200, json: async () => page }),
+    vi.fn().mockResolvedValue(
+      new Response(JSON.stringify(page), {
+        status: 200,
+        headers: { "Content-Type": "application/json" },
+      }),
+    ),
   );
 };
 
